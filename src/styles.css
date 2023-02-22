@@ -1,3 +1,16 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-top: 50px;
+}
+
 .dataContainer {
   display: flex;
   gap: 5px;
@@ -5,16 +18,48 @@
 
 #forecastContainer {
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
-
+  grid-template: 0.5fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
   width: 400px;
   height: 400px;
-
-  border-left: 1px solid gray;
-  border-top: 1px solid gray;
 }
 
 #forecastContainer > div {
-  border-bottom: 1px solid gray;
-  border-right: 1px solid gray;
+  display: flex;
+  justify-content: center;
+}
+
+#currentWeatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  height: 85px;
+}
+
+input {
+  background-color: rgb(227 232 239);
+  height: 40px;
+  width: 300px;
+  border: 0;
+  outline: none;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+
+button {
+  appearance: none;
+  --webkit-appearance: none;
+  background-color: rgb(227 232 239);
+  height: 40px;
+  width: 90px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(227 232 239);
+  background-color: transparent;
+}
+
+img {
+  width: 40%;
+  position: relative;
+  align-self: flex-start;
 }
