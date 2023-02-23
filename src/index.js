@@ -130,7 +130,7 @@ function displayForecast() {
 //Async function to retrieve current weather data
 async function getCurrentWeather(location) {
   const url =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     location +
     "&APPID=32546ef9eee647609c5b06622ae0d03f" +
     "&units=" +
@@ -142,7 +142,7 @@ async function getCurrentWeather(location) {
 //api.openweathermap.org/data/2.5/forecast?q=Auckland&appid=32546ef9eee647609c5b06622ae0d03f&units=metric
 async function getWeatherForecast(location) {
   const url =
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
     location +
     "&APPID=32546ef9eee647609c5b06622ae0d03f" +
     "&units=" +
